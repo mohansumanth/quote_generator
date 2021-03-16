@@ -19,7 +19,6 @@ div#quote_block {
     margin: auto;
     margin-top: 5%;
     width: 30%;
-    height: auto;
     overflow: hidden;
     /* opacity: 0.5; */
 }
@@ -36,6 +35,7 @@ div#quote {
     font-weight: bold;
     /* font-variant: small-caps; */
     font-size: 20px;
+    display: grid;
 }
 
 button {
@@ -49,4 +49,14 @@ button {
     font-size: 15px;
     background-color: transparent;
     box-shadow: 0px 0px 5px 2px rgb(0, 0, 0);
+}
+
+@media only screen and (max-width: 500px) {
+    div#quote_block {
+        width: 95%;
+    }
+    div#quote {
+        height: 20%;
+        font-size: large;
+    }
 }
